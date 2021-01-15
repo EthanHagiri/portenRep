@@ -1,0 +1,1049 @@
+@font-face {
+  font-family: 'PostNoBillsJaffna-Bold';
+  src: url('../fonts/PostNoBillsJaffna-Bold.eot');
+  src: url('../fonts/PostNoBillsJaffna-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PostNoBillsJaffna-Bold.svg#PostNoBillsJaffna-Bold') format('svg'),
+  url('../fonts/PostNoBillsJaffna-Bold.ttf') format('truetype'),
+  url('../fonts/PostNoBillsJaffna-Bold.woff') format('woff'),
+  url('../fonts/PostNoBillsJaffna-Bold.woff2') format('woff2');
+}
+/* PostNoBillsJaffna-Bold */
+
+@font-face {
+  font-family: 'PTSans-Regular';
+  src: url('../fonts/PTSans-Regular.eot');
+  src: url('../fonts/PTSans-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PTSans-Regular.svg#PTSans-Regular') format('svg'),
+  url('../fonts/PTSans-Regular.ttf') format('truetype'),
+  url('../fonts/PTSans-Regular.woff') format('woff'),
+  url('../fonts/PTSans-Regular.woff2') format('woff2');
+}
+/* PTSans-Regular */
+
+@font-face {
+  font-family: 'PlayfairDisplay-Regular';
+  src: url('../fonts/PlayfairDisplay-Regular.eot');
+  src: url('../fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg'),
+  url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+  url('../fonts/PlayfairDisplay-Regular.woff') format('woff'),
+  url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2');
+}
+/* PlayfairDisplay-Regular */
+
+@font-face {
+  font-family: 'PlayfairDisplay-Bold';
+  src: url('../fonts/PlayfairDisplay-Bold.eot');
+  src: url('../fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg'),
+  url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+  url('../fonts/PlayfairDisplay-Bold.woff') format('woff'),
+  url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+/* PlayfairDisplay-Bold */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
+p, ul, li {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: 'PTSans-Regular', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  background: #000000;
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+input:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+textarea:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+
+/* Header
+=================================== */
+
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+
+.headerAbout {
+  display: flex;
+  align-items: center;
+  color: #969696;
+  font-size: 12px;
+}
+
+.headerAboutIcon {
+  margin-right: 16px;
+}
+
+.headerAboutPhone {
+  color: #969696;
+  transition: all .2s linear;
+}
+
+.headerAboutPhone:hover {
+  color: #ffffff;
+}
+
+.headerAboutLine {
+  margin: 0 10px;
+}
+
+// .headerAboutPhone::after {
+//   content: "|";
+//   margin: 0 10px;
+// }
+
+// .headerAboutWeek::after {
+//   content: "|";
+//   margin: 0 10px;
+// }
+
+.headerLog {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.headerLogInIcon {
+  margin-right: 12px;
+}
+
+.headerLogIn {
+  color: #969696;
+
+}
+
+.headerLog span {
+  color: #969696;
+  margin: 0 5px;
+  cursor: default;
+}
+
+.headerLogReg {
+  color: #969696;
+}
+
+.headerLog a {
+  transition: all .2s linear;
+}
+
+.headerLog a:hover {
+  color: #ffffff;
+}
+
+.headerNav {
+  background: #0F0F0F;
+}
+
+.navInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navContent {
+  display: flex;
+  align-items: center;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+}
+
+.navLink {
+  display: block;
+  color: #969696;
+  padding: 31px 20px;
+  transition: all .2s linear;
+  text-transform: uppercase;
+}
+
+.navLink:hover {
+  color: #ffffff;
+  background: #1F1F1F;
+}
+
+.navLink:last-child {
+  margin-right: 41px;
+}
+
+.navCart {
+  margin-right: 44px;
+  transition: all .2s linear;
+}
+
+.navCart:hover {
+  transform: scale(1.2);
+}
+
+.navSearch {
+  transition: all .2s linear;
+}
+
+.navSearch:hover {
+  transform: scale(1.2);
+}
+
+/* MainList
+=================================*/
+
+.mainList {
+  position: relative;
+  padding-top: 42.2%;
+}
+
+.mainListImage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.mainListBrand {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.mainListBrandName {
+  font-family: 'PostNoBillsJaffna-Bold', sans-serif;
+  font-size: 64px;
+  line-height: 96px;
+  text-transform: uppercase;
+}
+
+.mainListBrandLocation {
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.mainListText {
+  position: absolute;
+  top: 72%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 730px;
+  text-align: center;
+}
+
+.mainListText-text {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* NewSeason
+=================================*/
+
+.newSeason {
+  display: flex;
+  align-items: center;
+  font-family: 'PlayfairDisplay-Regular', sans-serif;
+  width: 100%;
+}
+
+.newSeasonContent {
+  padding: 93px 0 53px;
+  width: 54.16%;
+}
+
+.title {
+  font-family: 'PlayfairDisplay-Bold', sans-serif;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+.newSeasonTitle {
+
+  margin-bottom: 100px;
+  position: relative;
+
+  .line {
+    &:after {
+      top: 31%;
+      left: 50%;
+    }
+  }
+}
+
+.itemLink {
+  transition: all .2s linear;
+}
+
+.itemLink:hover {
+  transform: scale(1.02);
+}
+
+.newSeasonItems {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 80px;
+}
+
+.itemPicture {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 260px;
+  height: 325px;
+  background: #191B1C;
+  margin-bottom: 25px;
+}
+
+.itemImage {
+  margin: 0 auto;
+}
+
+.itemName {
+  max-width: 260px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.itemPrice {
+  max-width: 260px;
+  font-size: 16px;
+}
+
+.newSeasonCollection {
+  position: relative;
+  width: 46%;
+  padding-top: 38.7%;
+  object-fit: cover;
+}
+
+.newSeasonCollectionImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.newSeasonCollectionTitle {
+  position: absolute;
+  top: 66%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 376px;
+}
+
+.line:after {
+  content: "";
+  //display: block;
+  height: 1px;
+  width: 120px;
+  background: white;
+  position: absolute;
+  top: 160%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.newSeasonCollectionButton {
+  display: block;
+  position: absolute;
+  top: 81%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 2px solid white;
+  padding: 12px 28px;
+
+  font-family: 'PTSans-Regular', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  transition: all .2s linear;
+}
+
+.newSeasonCollectionButton:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Collection
+=================================*/
+
+.collection {
+  display: flex;
+  align-items: center;
+}
+
+.collectionImage {
+  position: relative;
+  padding-top: 31%;
+  width: 45%;
+}
+
+.collectionImagePicture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collectionContent {
+  margin: 0 auto;
+  max-width: 471px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.collectionTitle {
+  font-family: 'PlayfairDisplay-Regular', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin-bottom: 80px;
+}
+
+.collectionText {
+  margin-bottom: 61px;
+  line-height: 150%;
+}
+
+.collectionContentLink {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 23px;
+  padding: 12px 28px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #FFFFFF;
+  letter-spacing: 0.1em;
+  transition: all .2s linear;
+}
+
+.collectionContentLink:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+
+
+/* Arrivals
+=================================*/
+
+.arrivals {
+  padding: 120px 0 110px;
+  font-family: 'PlayfairDisplay-Regular', sans-serif;
+}
+
+.arrivalsTitle {
+  margin-bottom: 121px;
+}
+
+.arrivalsLink {
+  transition: all .2s linear;
+}
+
+.arrivalsLink:hover {
+  transform: scale(1.02);
+}
+
+.arrivalsItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item {
+  margin-bottom: 40px;
+}
+
+/* Brands
+=================================*/
+
+.brands {
+  background: #0F0F0F;;
+  padding: 60px 0 74px;
+}
+
+.brandsTitle {
+  margin-bottom: 80px;
+}
+
+.brandsItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.brandsItem {
+  width: 255px;
+  height: 94px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* Footer
+=================================*/
+
+.footerParent {
+  padding: 80px 0 101px;
+  background-image: url("../images/footerBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.footerInner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerAbout {
+  max-width: 350px;
+}
+
+.footerTitle {
+  font-family: 'PlayfairDisplay-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.footerText {
+  line-height: 150%;
+}
+
+.footerCategory {
+  max-width: 287px;
+}
+
+.footerItems {
+  display: flex;
+  align-items: center;
+  
+  flex-wrap: wrap;
+}
+
+.footerLink {
+  display: flex;
+  background: #000000;
+  text-decoration: none;
+  color: #D0D0D0;
+  padding: 10px 21px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+  transition: all .2s linear;
+}
+
+.footerLink:hover {
+  color: #000000;
+  background: #ffffff;
+}
+
+.footerMargin {
+  margin-bottom: 20px;
+}
+
+.footerMailing {
+  max-width: 350px;
+}
+
+.footerMailingForm {
+  display: flex;
+}
+
+.mailingText {
+  margin-bottom: 37px;
+}
+
+.mailAddressInput{
+  padding: 10px 20px;
+  max-width: 210px;
+  border: 2px solid transparent;
+  background: rgba(255, 255, 255, 0.4);;
+}
+
+.mailAddressInput::placeholder {
+  color: #c2bfbf;
+  font-family: 'PTSans-Regular', sans-serif;
+  font-size: 14px;
+}
+
+.mailAddressInput:focus {
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.mailAddressBtn {
+  font-family: 'PTSans-Regular', sans-serif;
+  font-size: 14px;
+  background: #0F0F0F;
+  padding: 10px 20px;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 150%;
+  max-width: 140px;
+  transition: all .2s linear;
+}
+
+.mailAddressBtn:hover {
+  color: #000000;
+  background: #ffffff;
+}
+
+.footerLastLine {
+  padding: 17px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.footerLastLineAuthor {
+  text-decoration-line: underline;
+}
+
+
+.burger {
+  display: none;
+
+  @media (max-width: 960px) {
+    display: block;
+  }
+}
+
+.menu {
+  list-style-type: none;
+
+  li {
+    display: inline-block;
+
+    @media (max-width: 960px) {
+      width: 100%;
+      padding: 10px 0;
+    }
+  }
+
+
+  a {
+    color: #969696;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+}
+
+
+
+/* Media
+================================ */
+
+
+@media (max-width: 1300px) {
+
+  .title {
+    font-size: 24px;
+  }
+
+  /* Header */
+
+  .navLink {
+    font-size: 12px;
+  }
+
+  /* MainList */
+
+  .mainListText-text {
+    font-size: 13px;
+  }
+
+  /* NewSeasonCollection */
+
+  .newSeason {
+    display: block;
+  }
+
+  .newSeasonContent {
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+
+  .newSeasonItems {
+    justify-content: space-evenly;
+    padding: 0;
+  }
+
+  .newSeasonTitle {
+    margin-bottom: 50px;
+  }
+
+  .itemName {
+    font-size: 14px;
+  }
+
+  .itemPrice {
+    font-size: 14px;
+  }
+
+  .newSeasonCollection {
+    margin: 0 auto;
+  }
+
+  .newSeasonCollectionButton {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  /* NewCollection */
+
+  .collection {
+    padding-top: 50px;
+  }
+
+  .collectionContentLink {
+    padding: 6px 18px;
+    font-size: 14px;
+  }
+
+  .collectionTitle {
+    font-size: 24px;
+    margin-bottom: 55px;
+  }
+
+  .collectionText {
+    font-size: 12px;
+    margin-bottom: 40px;
+  }
+
+  /* Arrivals */
+
+  .arrivals {
+    padding: 50px 0 50px;
+  }
+
+  .arrivalsTitle {
+    margin-bottom: 50px;
+  }
+
+  /* Brands */
+
+  .brandsTitle {
+    margin-bottom: 30px;
+  }
+
+  /* Footer */
+
+  .footerText {
+    font-size: 12px;
+  }
+
+}
+
+
+@media (max-width: 1050px) {
+
+  .navCart {
+    display: none;
+  }
+
+  .navSearch {
+    display: none;
+  }
+
+  .menuToggle {
+    display: block;
+    position: absolute;
+    top: 66px;
+    right: 15px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+
+    .burger {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      cursor: pointer;
+      opacity: 0;
+      z-index: 2;
+      -webkit-touch-callout: none;
+
+      &:checked ~ {
+        .burgerLine {
+          opacity: 1;
+          transform: rotate(45deg) translate(-2px, -1px);
+
+          &:nth-last-child(3) {
+            opacity: 0;
+            transform: rotate(0deg) scale(0.2, 0.2);
+          }
+
+          &:nth-last-child(2) {
+            opacity: 1;
+            transform: rotate(-45deg) translate(0, -1px);
+          }
+        }
+
+        .menu {
+          transform: none;
+        }
+      }
+    }
+
+    .burgerLine {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+
+      background: #fff;
+      border-radius: 3px;
+
+      z-index: 1;
+
+      transform-origin: 4px 0px;
+
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      opacity 0.55s ease;
+    }
+
+    .burgerLine {
+      &:first-child {
+        transform-origin: 0% 0%;
+      }
+
+      &:nth-last-child(2) {
+        transform-origin: 0% 100%;
+      }
+    }
+
+  }
+
+  .menu {
+    position: absolute;
+    width: 200px;
+    margin: -100px 0 0 0;
+    padding: 50px;
+    padding-top: 125px;
+    right: -15px;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    background: #000000;
+
+    @media (max-width: 540px) {
+      display: flex;
+      left: 0;
+      flex-direction: column;
+      padding: 100px 0;
+      top: 90px;
+      position: fixed;
+      text-align: center;
+      width: 100%;
+      height: calc(100vh + 10px);
+      justify-content: space-between;
+    }
+
+  }
+
+  .navInner {
+    padding: 20px 0;
+  }
+
+  .mainListBrandName {
+    font-size: 45px;
+  }
+
+  .mainListBrandLocation {
+    font-size: 14px;
+  }
+
+  .mainListText-text {
+    font-size: 9px;
+  }
+
+  .brandsItems {
+    justify-content: space-evenly;
+  }
+
+  .footerInner {
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .footerAbout {
+    margin-bottom: 25px;
+  }
+
+  .footerTitle {
+    margin-bottom: 25px;
+  }
+
+  .footerCategory {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 760px) {
+
+  .mainListBrandName {
+    font-size: 36px;
+    line-height: 50px
+  }
+
+  .mainListBrandLocation {
+    font-size: 9px;
+  }
+
+  .mainListText-text {
+    font-size: 7px;
+    line-height: 10px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .collectionImage {
+    display: none;
+  }
+
+  .newSeasonItems {
+    text-align: center;
+  }
+
+  .itemName {
+    font-size: 12px;
+  }
+
+  .itemPrice {
+    font-size: 12px;
+  }
+
+  .newSeasonCollectionButton {
+    padding: 4px 15px;
+    font-size: 11px;
+  }
+
+  .collectionContentLink {
+    padding: 4px 15px;
+    font-size: 11px;
+  }
+
+  .arrivalsItems {
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+}
+
+@media (max-width: 550px) {
+
+  .headerLog {
+    display: none;
+  }
+
+  .mainListBrand {
+    top: 23%;
+  }
+
+  .mainListText {
+    top: 65%;
+  }
+
+  .newSeasonCollectionTitle {
+    font-size: 9px;
+  }
+
+  .collectionTitle {
+    margin-bottom: 35px;
+  }
+
+  .arrivalsTitle {
+    margin-bottom: 35px;
+  }
+
+}
+
+@media (max-width: 471px) {
+
+  .mainListBrand {
+    top: 50%;
+  }
+
+  .mainListText {
+    display: none
+  }
+}
